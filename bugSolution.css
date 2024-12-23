@@ -1,0 +1,11 @@
+The corrected CSS code snippet is shown below:
+
+```css
+.element {
+  width: calc(100% - 20px);
+  /* Correct: Space between operator and value */
+  height: calc(50% - 10px);
+}
+```
+
+Adding the space ensures that the browser correctly parses the mathematical expression, leading to the expected height calculation.
