@@ -1,0 +1,11 @@
+The CSS property `calc()` is used incorrectly in the following code snippet:
+
+```css
+.element {
+  width: calc(100% - 20px);
+  /* Incorrect: Missing space between operator and value */
+  height: calc(50% -10px);
+}
+```
+
+The correct usage requires a space between the operator and the value, which is missing in the `height` calculation.  The browser might interpret this incorrectly, leading to unexpected layout or rendering issues.  This is a subtle error that's easily missed.
